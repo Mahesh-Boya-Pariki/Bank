@@ -10,7 +10,8 @@ def init_db():
     uid = 'maheshp'
     pwd = 'Welcome123'
     con = pyodbc.connect(
-        "Driver={"+driver+"};SERVER="+server+";DATABASE="+db_name+";UID="+uid+";PWD="+pwd
+        "Driver={"+driver+"};SERVER="+server+";DATABASE="+db_name+";UID=" +
+        uid+";PWD="+pwd
         )
     cursor = con.cursor()
     return cursor
